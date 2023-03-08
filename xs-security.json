@@ -6,6 +6,14 @@
     {
       "name": "uaa.user",
       "description": "UAA"
+    },
+    {
+      "name": "$XSAPPNAME.PRViewer",
+      "description": "PR Viewer"
+    },
+    {
+      "name": "$XSAPPNAME.PRManager",
+      "description": "PR Manager"
     }
   ],
   "role-templates": [
@@ -15,6 +23,25 @@
       "scope-references": [
         "uaa.user"
       ]
+    },
+
+    {
+      "name": "PRViewer",
+      "description": "PR Viewer",
+      "scope-references": [
+        "$XSAPPNAME.PRViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "PRManager",
+      "description": "PR Manager",
+      "scope-references": [
+        "$XSAPPNAME.PRManager"
+      ],
+      "attribute-references": []
     }
-  ]
+
+  ],
+  "attributes": []
 }

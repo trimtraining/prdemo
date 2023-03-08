@@ -18,6 +18,9 @@ target/
 *.mtar
 mta_archives/
 
+resources/
+dist/
+
 # Other
 .DS_Store
 *.orig
